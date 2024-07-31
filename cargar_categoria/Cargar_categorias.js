@@ -11,7 +11,6 @@ async function fetchCategories() {
         categoriesContainer.innerHTML = '';
 
         // Recorre cada categoría y crea un botón para cada una
-        
         categories.forEach(category => {
             let button = document.createElement("button");
             button.className = "category_btn"; // Asigna una clase al botón
@@ -66,3 +65,6 @@ async function filterProductsByCategory(category) {
 
 // Ejecuta la función para obtener categorías cuando el contenido de la página se haya cargado
 document.addEventListener('DOMContentLoaded', fetchCategories);
+
+// Exporta la función fetchCategories como cargar_categorias
+export { fetchCategories as cargar_categorias };

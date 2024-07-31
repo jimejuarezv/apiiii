@@ -75,3 +75,6 @@ async function fetchProducts() {
 
 // Este evento ejecuta la función fetchProducts cuando el contenido del documento ha sido cargado
 document.addEventListener('DOMContentLoaded', fetchProducts);
+
+// Exporta la función fetchProducts como cargarProductos
+export { fetchProducts as cargarProductos };
